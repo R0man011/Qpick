@@ -1,0 +1,74 @@
+.product-earphones__category {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c27;
+  padding: 29px 0 22px 0;
+}
+
+// favorites-tws-earphones
+.favorites-icon {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  height: 18px;
+  width: 20px;
+  transition: all 0.3s;
+  background: url(../image/svg/card-icon1.svg) no-repeat;
+  &:hover {
+    background: url(../image/svg/card-icon.svg) no-repeat;
+  }
+}
+.favorites-tws-earphones {
+  padding: 0 0 40px 0;
+}
+.favorites-tws-card {
+  display: flex;
+  gap: 45px;
+  &__item {
+    position: relative;
+    width: 350px;
+    height: 407px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    align-items: center;
+  }
+  &__img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 21px 33px 21px;
+  }
+  &__info-last {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 21px 33px 21px;
+  }
+  &__price {
+    flex-direction: column;
+  }
+  &__price span {
+    display: block;
+  }
+  &__price-old {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #ffce7f;
+    text-align: center;
+  }
+  &__sale {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.2934px;
+    line-height: 20px;
+    color: #df6464;
+  }
+}

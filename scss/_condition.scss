@@ -1,0 +1,34 @@
+// repeat block
+.condition-block {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin-bottom: 33px;
+}
+.condition-title {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1c1c27;
+  padding: 15px 0 15px 30px;
+}
+.condition-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+  padding: 0 40px 30px 45px;
+}
+
+// condition
+.condition{
+  &__body{
+    padding: 41px 0 90px 0;
+  }
+  &__return{
+    margin-bottom: 0;
+  }
+}

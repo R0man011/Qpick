@@ -1,0 +1,461 @@
+// обнуление
+@import "_nullstyle";
+
+@import "_favorites";
+@import "_backet";
+@import "_condition";
+@import "_contacts";
+@import "_order";
+@import "_order-processed";
+
+// шрифты
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+.main {
+  flex: 1 1 auto;
+}
+body {
+  height: 100%;
+  font-size: 17px;
+  color: #101010;
+  font-family: "Montserrat", sans-serif;
+  background-color: #eaeaea;
+}
+._container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// repeat block
+.title-block {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #838383;
+  margin-bottom: 20px;
+}
+.icon {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  height: 18px;
+  width: 20px;
+  background: url(../image/svg/card-icon.svg) no-repeat;
+  transition: all 0.3s;
+  &:hover {
+    background: url(../image/svg/card-icon1.svg) no-repeat;
+  }
+}
+.card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #1c1c27;
+  margin-bottom: 25px;
+}
+.card-rating {
+  position: relative;
+  padding-left: 35px;
+  font-size: 17px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  color: #838383;
+}
+.card-rating::before {
+  content: "★";
+  display: block;
+  font-size: 29px;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  color: #ffce7f;
+}
+.card-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffa542;
+}
+
+// header
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+  }
+  &__logo {
+    flex: 0 0 160px;
+  }
+  &__logo-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #101010;
+  }
+  &__phone-selection {
+    flex: 1 1 auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  &__shop {
+    align-items: center;
+    display: flex;
+  }
+  &__favorites {
+    position: relative;
+    margin-right: 45px;
+  }
+  &__favorites::after {
+    content: "2";
+    font-size: 15px;
+    position: absolute;
+    bottom: 9px;
+    right: -10px;
+    width: 15px;
+    height: 15px;
+    background-color: #ffa542;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 2;
+    padding: 2px;
+  }
+  &__backet {
+    position: relative;
+    margin-right: 10px;
+  }
+  &__backet::before {
+    content: "1";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffa542;
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+    text-align: center;
+    padding: 2px;
+    bottom: 11px;
+    right: -10px;
+  }
+}
+.icon-phone {
+  float: left;
+  height: 21px;
+  padding-right: 15px;
+}
+.icon-arrow {
+  padding-left: 5px;
+}
+
+// hero
+.hero {
+  padding: 22px 0 44px 0;
+  &__banner {
+    position: relative;
+    background: #101010;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    height: 197px;
+  }
+  &__title {
+    position: absolute;
+    font-style: normal;
+    width: 643px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    top: 58px;
+    left: 50px;
+  }
+}
+.banner {
+  position: absolute;
+  bottom: -20px;
+  right: 163px;
+}
+
+// product__case
+.product-case {
+  padding: 0 0 30px 0;
+}
+.card-case {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 25px 100px 50px 100px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1c1c27;
+    text-align: center;
+  }
+}
+
+// product-earphones
+.product-earphones {
+  padding: 0 0 50px 0;
+}
+.card-earphones {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 0;
+  &__item {
+    position: relative;
+    width: 350px;
+    height: 407px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    align-items: center;
+  }
+  &__icon-black {
+    background: url(../image/svg/card-icon1.svg) no-repeat;
+    &:hover {
+      background: url(../image/svg/card-icon.svg) no-repeat;
+    }
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  &__img-position {
+    padding-top: 75px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 21px 32px 21px;
+  }
+  &__price {
+    flex-direction: column;
+  }
+  &__price span {
+    display: block;
+  }
+  &__price-old {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #ffce7f;
+    text-align: center;
+  }
+  &__sale {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.2934px;
+    line-height: 20px;
+    color: #df6464;
+  }
+}
+.price-read {
+  color: #df6464;
+}
+.price-read-line {
+  color: #aaaaaa;
+  text-decoration-line: line-through #df6464;
+  text-decoration-color: #df6464;
+}
+
+//tws-earphones
+.tws-earphones {
+  padding: 0 0 60px 0;
+}
+.tws-card {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+    width: 350px;
+    height: 407px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    align-items: center;
+  }
+  &__img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  &__img-position {
+    padding-top: 27px;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 21px 33px 21px;
+  }
+  &__info-last {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 21px 33px 21px;
+  }
+  &__price {
+    flex-direction: column;
+  }
+  &__price span {
+    display: block;
+  }
+  &__price-old {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: line-through;
+    color: #ffce7f;
+    text-align: center;
+  }
+  &__sale {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.2934px;
+    line-height: 20px;
+    color: #df6464;
+  }
+}
+.icon-apple::after {
+  content: "";
+  width: 25px;
+  height: 31px;
+  position: absolute;
+  top: 23px;
+  right: 21px;
+  background: url(../image/svg/tws-icon-apple.svg) right no-repeat;
+}
+
+// footer
+.footer {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    height: 149px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px;
+    padding: 29px 26px 0 26px;
+  }
+  &__logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    height: 30px;
+  }
+  &__menu-lang {
+    display: flex;
+    justify-content: space-between;
+    height: 82px;
+    align-items: center;
+  }
+  &__menu-links {
+    display: block;
+    flex: 0 0 110px;
+  }
+  &__menu-link {
+    display: inline-block;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 11px;
+    transition: color 0.3s;
+    &:hover {
+      color: #ffa542;
+    }
+  }
+  &__menu-link:last-child {
+    margin-bottom: 0;
+  }
+  &__lang {
+    display: flex;
+    flex-direction: column;
+  }
+  &__langs {
+    padding-left: 35px;
+  }
+  &__links {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin-bottom: 34px;
+    transition: color 0.3s;
+    &:hover {
+      color: #ffa542;
+    }
+  }
+  &__lang-link {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #101010;
+    font-weight: 500;
+    text-decoration: none;
+    &:not(:last-child) {
+      padding-right: 14px;
+    }
+  }
+  &__lang-link-active {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffa542;
+  }
+  &__social {
+    height: 30px;
+    align-items: center;
+  }
+  &__social-link {
+    display: inline-block;
+    &:not(:last-child) {
+      padding-right: 18px;
+    }
+  }
+}
+.lang-icon {
+  background: url(../image/svg/lang-icon.svg) no-repeat left;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Оформление заказа</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__logo">
+          <a class="header__logo-link" href="index.html">QPICK</a>
+        </div>
+        <div class="header__phone-selection">
+          Выбрать модель телефона
+          <img src="./image/svg/header-icon-phone.svg" alt="телефон" class="icon-phone">
+          <img src="./image/svg/header-arrow.svg" alt="стрелка выбора" class="icon-arrow">
+        </div>
+        <div class="header__shop">
+          <div class="header__favorites">
+            <a href="favorites.html"><img src="./image/svg/header-icon.svg" alt="избранное"></a>
+          </div>
+          <div class="header__backet">
+            <a href="backet.html"><img src="./image/svg/header-icon2.svg" alt="корзина"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <!-- order -->
+      <section class="order">
+        <div class="order__container _container">
+          <div class="order__body">
+            <div class="order__title">Оформление заказа</div>
+            <div class="order__column-left item-block">
+              <div class="order__title-price">
+                <h3 class="order__title-card">Доставка курьером</h3>
+                <p class="order__price">499 ₸</p>
+              </div>
+              <div class="order__map">
+                <img src="./image/order-map.png" alt="карта">
+              </div>
+              <div class="order__adres">
+                <div class="order__adres-title">Адрес доставки</div>
+                <form class="adres-form">
+                  <div class="adres-form__city-icon">
+                    <input class="adres-form__city adres-block" type="text" maxlength="35" placeholder="Город ">
+                  </div>
+                  <div class="adres-form__area-icon">
+                    <input class="adres-form__area adres-block" type="text" maxlength="35" placeholder="Улица / Район ">
+                  </div>
+                </form>
+                <form class="form-adres">
+                  <div class="form-adres__icon">
+                    <input class="form-adres__input adres-block" type="text" maxlength="10" placeholder="Дом ">
+                  </div>
+                  <div class="form-adres__icon">
+                    <input class="form-adres__input adres-block" type="text" maxlength="10" placeholder="Подъезд ">
+                  </div>
+                  <div class="form-adres__icon">
+                    <input class="form-adres__input adres-block" type="text" maxlength="10" placeholder="Квартира ">
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="order__column-right">
+              <div class="order__number-item item-block">
+                <div class="order__number-title-card">Ваш заказ</div>
+                <div class="order__number-items">
+                  <div class="order__number-title-text">
+                    <div class="order__numbers">x1</div>
+                    <div class="order__number-text-title">
+                      <h3 class="order__number-title">Наушники Apple BYZ S852I</h3>
+                      <p class="order__number-text">2 927 ₸</p>
+                    </div>
+                  </div>
+                  <div class="order__number-title-text">
+                    <div class="order__number-text-title">
+                      <h3 class="order__number-title">Доставка</h3>
+                      <p class="order__number-text">2 927 ₸</p>
+                    </div>
+                  </div>
+                  <div class="order__number-title-text">
+                    <div class="order__number-text-title">
+                      <h3 class="order__number-title">К оплате</h3>
+                      <p class="order__number-text">2 927 ₸</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order__payment item-block">
+                <div class="order__payment-title">Способ оплаты</div>
+                <div class="order__payment-items">
+                  <div class="order__payment-card">
+                    <h3 class="order__payment-card-title">Счет на kaspi.kz</h3>
+                    <img src="./image/svg/order-location-icon3.svg" alt="список">
+                  </div>
+                  <div class="order__payment-promo">
+                    <p class="order__payment-promo-title">Есть промокод?</p>
+                    <img src="./image/svg/order-location-icon4.svg" width="14" height="10" alt="стрелка">
+                  </div>
+                </div>
+              </div>
+
+              <div class="order__phone-number item-block">
+                <div class="order__phone-number-title">Номер получателя</div>
+                <div class="order__phone-number-item">
+                  <input class="order__phone-number-input adres-block" type="text" maxlength="35"
+                    placeholder="+7 ___ ___ __ __">
+                </div>
+              </div>
+
+              <div class="order__phone-number-button">
+                <a class="order__phone-number-btn" href="order-processed.html">Закончить оформление</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__container _container">
+        <div class="footer__body">
+          <div class="footer__logo">
+            <a class="header__logo-link" href="index.html">QPICK</a>
+          </div>
+          <div class="footer__menu-lang">
+            <div class="footer__menu-links">
+              <a href="favorites.html" class="footer__menu-link">Избранное</a>
+              <a href="backet.html" class="footer__menu-link">Корзина</a>
+              <a href="contacts.html" class="footer__menu-link">Контакты</a>
+            </div>
+            <div class="footer__lang">
+              <a href="сondition.html" class="footer__links">Условия сервиса</a>
+              <p class="footer__langs lang-icon">
+                <a href="#" class="footer__lang-link">Каз</a>
+                <a href="#" class="footer__lang-link footer__lang-link-active">Рус</a>
+                <a href="#" class="footer__lang-link">Eng</a>
+              </p>
+            </div>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link"><img src="./image/svg/footer-icon.svg" alt="VK"></a>
+            <a href="#" class="footer__social-link"><img src="./image/svg/footer-icon2.svg" alt="Instagram"></a>
+            <a href="#" class="footer__social-link"><img src="./image/svg/footer-icon3.svg" alt="Telegram"></a>
+            <a href="#" class="footer__social-link"><img src="./image/svg/footer-icon4.svg" alt="Whatsapp"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

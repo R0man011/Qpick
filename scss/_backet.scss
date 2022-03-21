@@ -1,0 +1,203 @@
+.backet {
+  padding: 29px 0 106px 0;
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1c1c27;
+    margin-bottom: 13px;
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    flex: 0 0 633px;
+    height: 218px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-bottom: 13px;
+  }
+  &__item::before {
+    content: "";
+    width: 21px;
+    height: 17px;
+    position: absolute;
+    top: 18px;
+    right: 29px;
+    background: url(../image/svg/backet-icon.svg) no-repeat;
+  }
+  &__item-image-price {
+    display: flex;
+    align-items: center;
+    padding: 18px 0 18px 18px;
+  }
+  &__item-img {
+    display: inline-block;
+  }
+  &__item-price {
+    margin-left: 24px;
+  }
+  &__item-price-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1c1c27;
+    margin-bottom: 12px;
+  }
+  &__item-price-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #aaaaaa;
+  }
+  &__number-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 29px 16px 18px;
+    align-items: center;
+  }
+  &__number-block {
+    position: relative;
+    width: 125px;
+    height: 30px;
+  }
+  &__number-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 30px;
+    background: url(../image/svg/backet-icon3.svg) no-repeat;
+  }
+  &__number-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 30px;
+    background: url(../image/svg/backet-icon2.svg) no-repeat;
+  }
+  &__number {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    padding-top: 5px;
+  }
+  &__price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: #1c1c27;
+  }
+  &__total {
+    flex: 0 0 347.9px;
+    height: 121px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+  &__title-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 16px 15px 21px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+  }
+  &__total-btn {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 23px 63px;
+    background: #101010;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+  &__delivery {
+    flex: 0 0 633px;
+    height: 288px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+  }
+  &__delivery-title {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    padding: 15px 0 17px 23px;
+  }
+  &__delivery-map-price-choice {
+    max-width: 584px;
+    padding: 0 19px 23px 30px;
+  }
+  &__delivery-map {
+    margin-bottom: 18px;
+  }
+  &__delivery-price-choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__choice-delivery {
+    width: 245px;
+    display: inline-block;
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    padding-left: 33px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      background: url(../image/svg/backet-icon4.svg) no-repeat;
+      width: 21px;
+      height: 13px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      right: 0;
+      background: url(../image/svg/backet-icon5.svg) no-repeat;
+      width: 14px;
+      height: 8px;
+    }
+  }
+  &__delivery-price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    color: #1c1c27;
+  }
+}
